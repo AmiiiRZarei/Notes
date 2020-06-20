@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteActivity"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_edit_note_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:logo="@drawable/ic_baseline_edit_24"
+            app:title="@string/your_note"
+            app:titleTextColor="@color/colorAccent"
+            app:menu="@menu/edit_note_activity_menu"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/ed_note"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edt_note_background"
+        android:gravity="top"
+        android:hint="@string/write_your_note"
+        android:textColorHint="#808080"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorAccent"
+        android:importantForAutofill="no" />
+
+</LinearLayout>
